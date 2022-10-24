@@ -9,10 +9,10 @@ As part of Microverse programme requirements for the completion of the **HTML/CS
 ## Project Tasks List (Working-in-progress)
 
 - [x] Setting up the initial project structure
-- [x] mobile version skeleton
-- [x] Desktop version
-- [x] Mobile menu - javascript
-- [x] Preserve data in the browser
+- [ ] mobile version skeleton
+- [ ] Desktop version
+- [ ] Mobile menu - javascript
+- [ ] Preserve data in the browser
 - [ ] Finalising the project page
 
 > [Live Demo Link](#)
