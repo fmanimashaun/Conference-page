@@ -47,7 +47,6 @@
   /* Custom fonts */
   --ff-primary: 'Lato', sans-serif;
   --ff-secondary: 'Gothic A1', sans-serif;
-
 }
 
 body {
@@ -128,7 +127,7 @@ body {
 }
 
 .hero__subtheme {
-  font-family: 'Lato';
+  font-family: var(--ff-primary);
   font-weight: 400;
   font-size: 13px;
   line-height: 17px;
@@ -141,7 +140,7 @@ body {
 
 .hero__event-date {
   margin-block-end: 0.5rem;
-  font-family: 'Gothic A1';
+  font-family: var(--ff-secondary);
   font-style: normal;
   font-weight: 900;
   font-size: 20px;
@@ -150,7 +149,7 @@ body {
 }
 
 .hero__event-venue {
-  font-family: 'Gothic A1';
+  font-family: var(--ff-secondary);
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -159,7 +158,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
   .header__banner.close,
   .header__logo.close,
   .header__navlinks.close {
