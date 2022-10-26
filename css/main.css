@@ -181,11 +181,11 @@ body {
 
 .program__title::before {
   position: absolute;
-  inset-inline-start: calc((100% - 30px)/2);
+  inset-inline-start: calc((100% - 30px) / 2);
   content: "";
   height: 100%;
   width: 30px;
-  border-bottom: 2px solid #a04038
+  border-bottom: 2px solid #a04038;
 }
 
 .program__cards {
@@ -255,7 +255,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
   .header__banner.close,
   .header__logo.close,
   .header__navlinks.close {
