@@ -202,6 +202,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   column-gap: 9px;
+  padding: 9px;
   background-color: #3b3e45;
 }
 
@@ -237,7 +238,6 @@ body {
   font-size: 10px;
   line-height: 22px;
   letter-spacing: 0.06em;
-  margin-inline-end: 12px;
 }
 
 .program__btn {
