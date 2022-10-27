@@ -193,6 +193,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3px;
   width: 100%;
+  max-inline-size: 1012px;
 }
 
 .program__card {
@@ -254,7 +255,115 @@ body {
   cursor: pointer;
 }
 
+/* Speakers styles
+------------------------------------ */
+.speakers__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+  padding: 12px;
+}
+
+.speakers__title {
+  position: relative;
+  margin-block-start: 18px;
+  padding-block-end: 15px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+}
+
+.speakers__title::before {
+  position: absolute;
+  inset-inline-start: calc((100% - 30px) / 2);
+  content: "";
+  height: 100%;
+  width: 30px;
+  border-bottom: 2px solid #a04038;
+}
+
+.speaker__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 21px;
+  width: 100%;
+  max-inline-size: 1012px;
+}
+
+.speaker__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  column-gap: 14px;
+}
+
+.speaker__card.close {
+  display: none;
+}
+
+.speaker__card-img {
+  display: block;
+  width: 107px;
+  height: auto;
+}
+
+.speaker__card-name {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  margin-block-end: 7px;
+}
+
+.speaker__card-title {
+  margin-block-end: 7px;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -0.02em;
+  color: #f78c89;
+}
+
+.speaker__card-details hr {
+  width: 18px;
+  border: 1.5px solid #d9d9d9;
+  margin-block-end: 12px;
+}
+
+.speaker__card-desc {
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 17px;
+  letter-spacing: -0.05em;
+}
+
+.speakers__btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  width: 80%;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: -0.05em;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  padding-block: 1em;
+}
+
+.speakers__btn-icon {
+  display: block;
+  width: 8px;
+  height: auto;
+}
+
 @media only screen and (min-width: 768px) {
+
   .header__banner.close,
   .header__logo.close,
   .header__navlinks.close {
@@ -271,5 +380,9 @@ body {
   .hero {
     padding: 5.9313rem 0.75rem 4.0213rem 0.75rem;
     background-image: url(../img/Hero-desktop_bg.png);
+  }
+
+  .speaker__card.close {
+    display: flex;
   }
 }
