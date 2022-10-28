@@ -87,26 +87,79 @@ body {
   position: fixed;
   inset-block-start: 0;
   inset-inline-start: 0;
+  z-index: 100;
   width: 100%;
-}
-
-.header__navbar-img {
-  display: block;
-  width: 1.9375rem;
-  height: auto;
-  margin: 17px 23px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .header__banner.close,
-.header__logo.close,
 .header__navlinks.close {
   display: none;
+}
+
+.header__banner {
+  background-color: #3e3e3e;
+  color: #fff;
+}
+
+.header__banner-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 20px;
+  padding-inline: 50px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  padding-block: 6px;
+}
+
+.header__banner-img {
+  display: block;
+  height: 18px;
+  width: auto;
+}
+
+.header__nav {
+  position: relative;
+  ;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 12px 23px;
+}
+
+.header__logo-img {
+  display: block;
+  width: 130px;
+  height: auto;
+}
+
+.header__navbar-img {
+  position: absolute;
+  inset-block-start: calc((100% - 1.9375rem) / 2);
+  inset-inline-start: 23px;
+  display: block;
+  width: 1.9375rem;
+  height: auto;
+}
+
+.header__navlinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 20px;
 }
 
 /* hero styles
 ------------------------------------ */
 .hero {
-  padding: 5.9313rem 0.75rem 4.0213rem 0.75rem;
+  margin-block-start: 75px;
+  padding: 6.8125rem 0.75rem 4.4375rem 0.75rem;
   background-image: url(../img/Hero-mobile_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -123,16 +176,16 @@ body {
 
 .hero__img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 114px;
 }
 
 .hero__subtheme {
-  font-size: 13px;
-  line-height: 17px;
-  letter-spacing: -0.01em;
-  color: #515151;
   padding: 17px 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+  color: #515151;
   background: #f8f8f8;
   border: 4px solid #fff;
 }
@@ -371,10 +424,17 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-  .header__banner.close,
-  .header__logo.close,
-  .header__navlinks.close {
+  .header {
+    position: unset;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .header__banner.close {
     display: block;
+  }
+
+  .header__navlinks.close {
+    display: flex;
   }
 
   .header__navbar-img,
