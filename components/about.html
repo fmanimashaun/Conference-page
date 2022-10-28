@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="../css/normalize.css">
 	<link rel="stylesheet" href="../css/main.css">
-	<link rel="stylesheet" href="../css/home.css">
+	<link rel="stylesheet" href="../css/about.css">
 </head>
 
 <body>
@@ -19,34 +19,51 @@
 		<header class="header">
 			<div class="header__banner close">
 				<ul class="header__banner-items">
-					<li><a href="#"><img src="../img/twitter.png" alt="twitter icon"></a></li>
-					<li><a href="#"><img src="../img/facebook.png" alt="facebook icon"></a></li>
+					<li><a href="#"><img class="header__banner-img" src="../img/twitter.png" alt="twitter icon"></a></li>
+					<li><a href="#"><img class="header__banner-img" src="../img/facebook.png" alt="facebook icon"></a></li>
 					<li>English</li>
 					<li>My Page</li>
 					<li>Logout</li>
 				</ul>
 			</div>
 			<div class="header__nav">
-				<a class="header__logo close" href="../">
+				<a class="header__logo close" href="/">
 					<img class="header__logo-img" src="../img/logo.png" alt="logo">
 				</a>
 				<nav class="header__navbar">
 					<ul class="header__navlinks close">
-						<li class="active"><a href="/">About</a></li>
+						<li><img class="header__navbar-close" src="../img/close_mobile_menu.png" alt="close icon"></li>
+						<li><a href="../">Home</a></li>
+						<li><a class="active" href="components/about.html">About</a></li>
 						<li><a href="#">Program</a></li>
 						<li><a href="#">Join</a></li>
 						<li><a href="#">Sponsor</a></li>
 						<li><a href="#">News</a></li>
-						<li><a href="#">CC Campaign</a></li>
+						<li class="campaign"><a href="#"><span>CC Campaign</span></a></li>
 					</ul>
-					<img src="../img/mobile_menu 1.png" alt="menu icon">
 				</nav>
+				<img class="header__navbar-menu" src="../img/menu.png" alt="menu icon">
 			</div>
 		</header>
-		<main></main>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__wrapper">
+					<img src="../img/theme_about.png" alt="Creative commons global summit 2015 banner" class="hero__img">
+					<p class="hero__subtheme">The Creative Commons Global Summit , held every two years, is a place where CC
+						activists from all over the
+						world and experts, scholars and activists from all walks of life who support and practice open culture
+						gather together.</p>
+					<div class="hero__event">
+						<p class="hero__event-date">2015.10.15(THU) ~ 16(FRI)</p>
+						<p class="hero__event-venue">@ National Museum of Karea, Art Center Nabi and more
+						</p>
+					</div>
+				</div>
+			</section>
+		</main>
 		<footer></footer>
 	</div>
-	<script src="js/index.js"></script>
+	<script src="../js/index.js"></script>
 </body>
 
 </html>
