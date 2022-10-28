@@ -1,8 +1,8 @@
 /* Global styles
 ------------------------------------ */
 :root {
-  /* 40px to 198px on viewport 768px to 1440px*/
-  --space-3: clamp(2.50rem, calc(-8.79rem + 23.51vw), 12.38rem);
+  /* 40px to 198px on viewport 768px to 1440px */
+  --space-3: clamp(2.5rem, calc(-8.79rem + 23.51vw), 12.38rem);
 
   /* 109px to 117px */
   --space-4: clamp(6.81rem, calc(6.64rem + 0.75vw), 7.31rem);
@@ -283,7 +283,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-
   /* Header styles
   ------------------------------------ */
   .header {

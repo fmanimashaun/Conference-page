@@ -54,7 +54,7 @@
   --space-1: clamp(0.94rem, calc(-2.63rem + 7.44vw), 4.06rem);
 
   /* 23px to 198px */
-  --space-2: clamp(2.50rem, calc(0.93rem + 3.27vw), 3.88rem);
+  --space-2: clamp(2.5rem, calc(0.93rem + 3.27vw), 3.88rem);
 }
 
 body {
@@ -209,8 +209,9 @@ body {
   border-block-end: 1px solid rgb(138, 138, 138);
 }
 
-.header__navlinks li:not(li:last-child) a {
-  padding-block: 10px;
+.header__navlinks li a:hover,
+.header__navlinks li a.active {
+  color: #F07F7E;
 }
 
 .header__navlinks li:nth-child(2) a {
@@ -218,19 +219,17 @@ body {
   padding-block: 10px;
 }
 
+.header__navlinks li:not(li:last-child) a {
+  padding-block: 10px;
+}
+
 .header__navlinks li:last-child span {
   display: inline-block;
-  background-color: #F05A46;
+  background-color: #f05a46;
   padding: 10px;
 }
 
-.header__navlinks li a:hover,
-.header__navlinks li a.active {
-  color: #F07F7E;
-}
-
 @media only screen and (min-width: 768px) {
-
   /* Header styles
   ------------------------------------ */
   .header {
