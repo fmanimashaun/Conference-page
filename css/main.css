@@ -211,7 +211,7 @@ body {
 
 .header__navlinks li a:hover,
 .header__navlinks li a.active {
-  color: #F07F7E;
+  color: #f07f7e;
 }
 
 .header__navlinks li:nth-child(2) a {
@@ -271,7 +271,7 @@ body {
     align-items: center;
     column-gap: var(--space-1);
     width: fit-content;
-    height: fit-content;
+    height: auto;
     padding-block: 0;
   }
 
@@ -301,9 +301,9 @@ body {
 
   .header__navlinks li:last-child span {
     display: inline-block;
-    color: #F05A46;
+    color: #f05a46;
     background-color: transparent;
     padding: 20px;
-    border: 5px solid #EC4327;
+    border: 5px solid #ec4327;
   }
 }
