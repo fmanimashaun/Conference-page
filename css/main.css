@@ -84,9 +84,9 @@
   /* 30px to 65px */
   --space-9: clamp(1.88rem, calc(1.15rem + 3.1vw), 3.94rem);
 
-  /* custom font-size */
+  /* custom spacing */
   
-  /* 16px to 24px */
+  /* 15px to 65px */
   --fs-1: clamp(1rem, calc(0.82rem + 0.75vw), 1.5rem);
 
   /* 14px to 18px */
