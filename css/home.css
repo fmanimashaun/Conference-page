@@ -41,6 +41,21 @@
 /* Global styles
 ------------------------------------ */
 :root {
+  /* Default font size */
+  font-size: 16px;
+
+  /* Custom fonts */
+  --ff-primary: 'Lato', sans-serif;
+  --ff-secondary: 'Gothic A1', sans-serif;
+
+  /* custom colors */
+  --dark-color: #272a31;
+  --ascent-color: #ec5242;
+  --light-grey-color: #d3d3d3;
+  --grey-color: #3b3e45;
+  --light-color: #fff;
+  --light-variant-color: #f8f8f8;
+
   /* custom space */
 
   /* 40px to 198px on viewport 768px to 1440px */
@@ -107,11 +122,11 @@
 .hero__subtheme {
   padding: 17px 14px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: var(--fs-3);
   line-height: 1.5;
-  color: #515151;
-  background: #f8f8f8;
-  border: 4px solid #fff;
+  color: var(--dark-color);
+  background: var(--light-variant-color);
+  border: 4px solid var(--light-color);
 }
 
 .hero__event {
@@ -122,15 +137,13 @@
   margin-block-end: 0.5rem;
   font-weight: 900;
   font-size: 20px;
-  letter-spacing: -0.08em;
-  color: #595959;
+  color: var(--dark-color);
 }
 
 .hero__event-venue {
   font-weight: 700;
-  font-size: 13px;
-  letter-spacing: -0.02em;
-  color: #868686;
+  font-size: var(--fs-3);
+  color: var(--dark-color);
 }
 
 /* programme styles
@@ -142,8 +155,8 @@
   align-items: center;
   row-gap: 40px;
   padding: var(--space-7) 12px;
-  background: url(../img/pattern_bg.png), #282b32;
-  color: #fff;
+  background: url(../img/pattern_bg.png), var(--dark-color);
+  color: var(--light-color);
 }
 
 .program__title {
@@ -160,7 +173,7 @@
   content: "";
   height: 100%;
   width: 30px;
-  border-bottom: 2px solid #a04038;
+  border-bottom: 2px solid var(--ascent-color);
 }
 
 .program__cards {
@@ -179,7 +192,7 @@
   align-items: center;
   column-gap: 9px;
   padding: 9px;
-  background-color: #3b3e45;
+  background-color: var(--grey-color);
 }
 
 .program__card::before {
@@ -206,7 +219,7 @@
   font-size: var(--fs-1);
   line-height: 1.5;
   letter-spacing: -0.01em;
-  color: #ff5438;
+  color: var(--ascent-color);
 }
 
 .program__card-text {
@@ -222,9 +235,9 @@
   font-weight: 900;
   font-size: var(--fs-1);
   line-height: 1.5;
-  color: #fff;
+  color: var(--light-color);
   text-decoration: none;
-  background-color: #ff4f38;
+  background-color: var(--ascent-color);
   cursor: pointer;
 }
 
@@ -258,7 +271,7 @@
   content: "";
   height: 100%;
   width: 30px;
-  border-bottom: 2px solid #a04038;
+  border-bottom: 2px solid var(--ascent-color);
 }
 
 .speaker__cards {
@@ -296,21 +309,22 @@
 
 .speaker__card-title {
   margin-block-end: 10px;
-  font-weight: 400;
-  font-size: var(--fs-4);
+  font-weight: 700;
+  font-size: var(--fs-3);
   line-height: 1.5;
-  color: #f78c89;
+  color: var(--ascent-color);
 }
 
 .speaker__card-details hr {
   width: 18px;
-  border: 1.5px solid #d9d9d9;
+  border: 1.5px solid var(--grey-color);
   margin-block-end: 12px;
+  opacity: 0.5;
 }
 
 .speaker__card-desc {
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--fs-3);
   line-height: 1.5;
 }
 
@@ -324,7 +338,7 @@
   font-weight: 700;
   font-size: 12px;
   letter-spacing: -0.05em;
-  border: 1px solid #dcdcdc;
+  border: 1px solid var(--light-grey-color);
   border-radius: 4px;
   padding-block: 1em;
   cursor: pointer;
@@ -356,7 +370,7 @@
   /* Header styles
   ------------------------------------ */
   .header {
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(4px 4px 4px var(--dark-color));
   }
 
   .header__banner {
@@ -404,7 +418,7 @@
   }
 
   .program__card:hover {
-    border: 2px solid #fff;
+    border: 2px solid --light-color;
   }
 
   .program__card-title {
@@ -420,7 +434,7 @@
     font-weight: 400;
     font-size: var(--fs-1);
     line-height: 1.5;
-    color: #fff;
+    color: var(--light-color);
     cursor: pointer;
   }
 
@@ -450,7 +464,7 @@
   }
 
   /* Partner styles
------------------------------------- */
+  ------------------------------------ */
   .partners {
     display: flex;
     flex-direction: column;
@@ -458,8 +472,8 @@
     align-items: center;
     row-gap: 40px;
     padding: var(--space-8) 12px;
-    color: #fff;
-    background-color: #414246;
+    color: var(--light-color);
+    background-color: var(--grey-color);
   }
 
   .partners__title {
@@ -476,7 +490,7 @@
     content: "";
     height: 100%;
     width: 30px;
-    border-bottom: 2px solid #a04038;
+    border-bottom: 2px solid var(--ascent-color);
   }
 
   .partner__img-wrapper {
@@ -497,10 +511,10 @@
       ------------------------------------ */
   .footer {
     display: block;
-    background-color: #fff;
+    background-color: var(--light-color);
   }
 
   .footer__credit-text {
-    color: #000;
+    color: var(--dark-color);
   }
 }
