@@ -293,13 +293,7 @@ body {
   text-decoration: none;
 }
 
-.footer__credit-text a:hover,
-.footer__credit-text a:active {
-  text-decoration: underline;
-}
-
 @media only screen and (min-width: 768px) {
-
   /* Header styles
   ------------------------------------ */
   .header {
