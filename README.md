@@ -9,13 +9,14 @@ As part of Microverse programme requirements for the completion of the **HTML/CS
 ## Project Tasks List (Working-in-progress)
 
 - [x] Setting up the initial project structure
-- [ ] mobile version skeleton
-- [ ] Desktop version
-- [ ] Mobile menu - javascript
-- [ ] Preserve data in the browser
-- [ ] Finalising the project page
+- [x] mobile version skeleton
+- [x] Desktop version
+- [x] Mobile menu - javascript
+- [x] Dynamic creation of html elements with javascript
 
-> [Live Demo Link](#)
+> [Live Demo Link](https://fmanimashaun.github.io/Conference-page/)
+
+> [Video Demo on LOOM](https://www.loom.com/share/fbebfa9e8d6b4a4c974a067554b75435)
 
 ## Screenshots
 
