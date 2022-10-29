@@ -97,6 +97,9 @@
 
   /* 14px to 16px */
   --fs-4: clamp(0.88rem, calc(0.83rem + 0.19vw), 1rem);
+
+  /* 10px to 14px */
+  --fs-5: clamp(0.63rem, calc(0.54rem + 0.38vw), 0.88rem);
 }
 
 body {
@@ -139,7 +142,7 @@ body {
   inset-inline-start: 0;
   z-index: 100;
   width: 100%;
-  filter: drop-shadow(4px 4px 4px var(--dark-color));
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.25));
 }
 
 .header__banner.close,
@@ -304,8 +307,8 @@ body {
   justify-content: center;
   align-items: flex-start;
   row-gap: 25px;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: var(--fs-5);
   line-height: 1.5;
 }
 
