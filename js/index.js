@@ -1,5 +1,4 @@
 // Creating variables
-
 const menuBtn = document.querySelector('.header__navbar-menu');
 const closeBtn = document.querySelector('.header__navbar-close');
 const mobileMenu = document.querySelector('.header__navlinks');
