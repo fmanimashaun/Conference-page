@@ -42,7 +42,7 @@
 ------------------------------------ */
 :root {
   /* custom space */
-  
+
   /* 40px to 198px on viewport 768px to 1440px */
   --space-3: clamp(2.5rem, calc(-8.79rem + 23.51vw), 12.38rem);
 
@@ -57,6 +57,12 @@
 
   /* 30x to 75px */
   --space-7: clamp(1.88rem, calc(0.88rem + 4.23vw), 4.69rem);
+
+  /* 20px to 75px */
+  --space-8: clamp(1.25rem, calc(0.92rem + 1.41vw), 2.19rem);
+
+  /* 30px to 65px */
+  --space-9: clamp(1.88rem, calc(1.15rem + 3.10vw), 3.94rem);
 
   /* custom font-size */
 
@@ -102,7 +108,7 @@
   padding: 17px 14px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 17px;
+  line-height: 1.5;
   color: #515151;
   background: #f8f8f8;
   border: 4px solid #fff;
@@ -142,7 +148,6 @@
 
 .program__title {
   position: relative;
-  margin-block-start: 18px;
   padding-block-end: 15px;
   font-weight: 400;
   font-size: 20px;
@@ -216,7 +221,7 @@
   padding: 20px 50px;
   font-weight: 900;
   font-size: var(--fs-1);
-  line-height: 28px;
+  line-height: 1.5;
   color: #fff;
   text-decoration: none;
   background-color: #ff4f38;
@@ -240,11 +245,10 @@
 
 .speakers__title {
   position: relative;
-  margin-block-start: 18px;
   padding-block-end: 15px;
   font-weight: 400;
   font-size: var(--fs-1);
-  line-height: 28px;
+  line-height: 1.5;
   letter-spacing: -0.04em;
 }
 
@@ -336,15 +340,20 @@
   display: none;
 }
 
+/* Partner styles
+------------------------------------ */
 .partners {
   display: none;
 }
 
+/* Footer styles
+------------------------------------ */
 .footer {
   display: none;
 }
 
 @media only screen and (min-width: 768px) {
+
   /* Header styles
   ------------------------------------ */
   .header {
@@ -375,30 +384,14 @@
   }
 
   /* hero styles
------------------------------------- */
+  ------------------------------------ */
   .hero {
     margin-block-start: 118px;
     background-image: url(../img/Hero-desktop_bg.png);
   }
 
-  .program__btn.desktop {
-    display: inline-block;
-    font-weight: 400;
-    font-size: var(--fs-1);
-    line-height: 1.5;
-    color: #fff;
-    cursor: pointer;
-  }
-
-  .program__btn.desktop:hover,
-  .program__btn.desktop:active {
-    text-decoration: none;
-  }
-
-  .program__btn.mobile {
-    display: none;
-  }
-
+  /* programme styles 
+  ------------------------------------ */
   .program__cards {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -423,6 +416,26 @@
     text-align: center;
   }
 
+  .program__btn.desktop {
+    display: inline-block;
+    font-weight: 400;
+    font-size: var(--fs-1);
+    line-height: 1.5;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .program__btn.desktop:hover,
+  .program__btn.desktop:active {
+    text-decoration: none;
+  }
+
+  .program__btn.mobile {
+    display: none;
+  }
+
+  /* Speakers styles
+  ------------------------------------ */
   .speaker__card-img {
     display: block;
     max-width: 178px;
@@ -431,5 +444,64 @@
 
   .speaker__card.close {
     display: flex;
+  }
+
+  .speakers__btn {
+    display: none;
+  }
+
+  /* Partner styles
+------------------------------------ */
+  .partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40px;
+    padding: var(--space-8) 12px;
+    color: #fff;
+    background-color: #414246;
+  }
+
+  .partners__title {
+    position: relative;
+    padding-block-end: 15px;
+    font-weight: 400;
+    font-size: var(--fs-1);
+    line-height: 1.5;
+  }
+
+  .partners__title::before {
+    position: absolute;
+    inset-inline-start: calc((100% - 30px) / 2);
+    content: "";
+    height: 100%;
+    width: 30px;
+    border-bottom: 2px solid #a04038;
+  }
+
+  .partner__img-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+  }
+
+  .partner__img {
+    display: block;
+    width: 200px;
+    height: auto;
+  }
+
+  /* Footer styles
+      ------------------------------------ */
+  .footer {
+    display: block;
+    background-color: #fff;
+  }
+
+  .footer__credit-text {
+    color: #000;
   }
 }

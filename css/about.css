@@ -103,7 +103,16 @@ body {
   color: #868686;
 }
 
+.footer__credit-img.desktop {
+  display: none;
+}
+
+.footer__credit-text p:last-child {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
+
   /* Header styles
   ------------------------------------ */
   .header {
@@ -131,5 +140,17 @@ body {
   .header__navbar-img,
   .header__navbar-img.close {
     display: none;
+  }
+
+  .footer__credit-img.desktop {
+    display: unset;
+  }
+
+  .footer__credit-img.mobile {
+    display: none;
+  }
+
+  .footer__credit-text p:last-child {
+    display: unset;
   }
 }

@@ -55,6 +55,27 @@
 
   /* 23px to 198px */
   --space-2: clamp(2.5rem, calc(0.93rem + 3.27vw), 3.88rem);
+
+  /* 40px to 198px on viewport 768px to 1440px */
+  --space-3: clamp(2.5rem, calc(-8.79rem + 23.51vw), 12.38rem);
+
+  /* 109px to 117px */
+  --space-4: clamp(6.81rem, calc(6.64rem + 0.75vw), 7.31rem);
+
+  /* 71px to 166px */
+  --space-5: clamp(4.44rem, calc(2.35rem + 8.92vw), 10.38rem);
+
+  /* 12px to 206px */
+  --space-6: clamp(0.75rem, calc(-3.52rem + 18.22vw), 12.88rem);
+
+  /* 30x to 75px */
+  --space-7: clamp(1.88rem, calc(0.88rem + 4.23vw), 4.69rem);
+
+  /* 20px to 75px */
+  --space-8: clamp(1.25rem, calc(0.92rem + 1.41vw), 2.19rem);
+
+  /* 30px to 65px */
+  --space-9: clamp(1.88rem, calc(1.15rem + 3.10vw), 3.94rem);
 }
 
 body {
@@ -234,7 +255,51 @@ body {
   background-color: #fff;
 }
 
+.footer {
+  display: block;
+  margin-inline: auto;
+  padding: 27px;
+}
+
+.footer__credit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: var(--space-9);
+  max-inline-size: 998px;
+}
+
+.footer__credit-img {
+  flex: 1;
+  max-width: 250px;
+  height: auto;
+}
+
+.footer__credit-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer__credit-text a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer__credit-text a:hover,
+.footer__credit-text a:active {
+  text-decoration: underline;
+}
+
 @media only screen and (min-width: 768px) {
+
   /* Header styles
   ------------------------------------ */
   .header {
@@ -307,5 +372,10 @@ body {
     background-color: transparent;
     padding: 20px;
     border: 5px solid #ec4327;
+  }
+
+  .footer {
+    background-color: #32353c;
+    color: #fff;
   }
 }
