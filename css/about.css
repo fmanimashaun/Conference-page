@@ -67,10 +67,10 @@
   --fs-6: clamp(1.88rem, calc(1.15rem + 3.1vw), 3.94rem);
 
   /* 18px to 40px */
-  --fs-7: clamp(1.13rem, calc(0.45rem + 2.88vw), 2.50rem);
+  --fs-7: clamp(1.13rem, calc(0.45rem + 2.88vw), 2.5rem);
 
   /* 25px to 40px */
-  --fs-8: clamp(1.31rem, calc(0.73rem + 2.48vw), 2.50rem);
+  --fs-8: clamp(1.31rem, calc(0.73rem + 2.48vw), 2.5rem);
 }
 
 body {
@@ -123,7 +123,6 @@ body {
   max-inline-size: 793px;
   padding-block: 20px;
 }
-
 
 .hero__header {
   padding-inline: 12px;
@@ -375,7 +374,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
   /* Header styles
   ------------------------------------ */
   .header__banner {
@@ -418,7 +416,7 @@ body {
   .hero__welcome {
     display: none;
   }
-  
+
   .hero__subtheme.desktop {
     display: unset;
   }
