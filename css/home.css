@@ -206,6 +206,10 @@
   opacity: 20%;
 }
 
+.program__card:hover {
+  border: 2px solid var(--light-color);
+}
+
 .program__card-img {
   display: block;
   width: 57px;
@@ -411,10 +415,6 @@
     align-items: center;
     row-gap: 13px;
     padding-block: 10px;
-  }
-
-  .program__card:hover {
-    border: 2px solid var(--light-color);
   }
 
   .program__card-title {
