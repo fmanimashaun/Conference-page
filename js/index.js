@@ -52,8 +52,8 @@ const speakers = [
     name: '',
     title: '',
     desc: '',
-  }
-]
+  },
+];
 
 // Adding event listener to menu button
 menuBtn.addEventListener('click', () => {
