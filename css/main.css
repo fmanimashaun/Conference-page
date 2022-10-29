@@ -85,7 +85,7 @@
   --space-9: clamp(1.88rem, calc(1.15rem + 3.1vw), 3.94rem);
 
   /* custom spacing */
-  
+
   /* 15px to 65px */
   --fs-1: clamp(1rem, calc(0.82rem + 0.75vw), 1.5rem);
 
@@ -320,6 +320,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+
   /* Header styles
   ------------------------------------ */
   .header {
