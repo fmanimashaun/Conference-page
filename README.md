@@ -32,7 +32,8 @@ As part of Microverse programme requirements for the completion of the **HTML/CS
 
 <h3 align="center">Mobile View</h3>
 <p align="center">
-  <img width="375" src="screenshots/mobile_view.png">
+  <img width="375" src="screenshots/mobile_view_1.png">
+  <img width="375" src="screenshots/mobile_view_2.png">
 </P>
 
 ## Built With
