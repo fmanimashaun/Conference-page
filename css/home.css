@@ -321,12 +321,17 @@
   border: 1px solid #dcdcdc;
   border-radius: 4px;
   padding-block: 1em;
+  cursor: pointer;
 }
 
 .speakers__btn-icon {
   display: block;
   width: 8px;
   height: auto;
+}
+
+.speakers__btn.close {
+  display: none;
 }
 
 .partners {
