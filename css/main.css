@@ -260,11 +260,8 @@ body {
     display: none;
   }
 
-  .header__navlinks.close {
-    display: flex;
-  }
-
   .header__navlinks {
+    display: flex;
     position: static;
     flex-direction: row;
     justify-content: space-between;
