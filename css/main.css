@@ -229,6 +229,11 @@ body {
   padding: 10px;
 }
 
+.header__navlinks li:last-child a:hover span {
+  color: #f05a46;
+  background-color: #fff;
+}
+
 @media only screen and (min-width: 768px) {
   /* Header styles
   ------------------------------------ */
