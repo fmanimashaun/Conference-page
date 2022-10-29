@@ -86,7 +86,7 @@
 
   /* custom spacing */
 
-  /* 15px to 65px */
+  /* 16px to 24px */
   --fs-1: clamp(1rem, calc(0.82rem + 0.75vw), 1.5rem);
 
   /* 14px to 18px */
@@ -320,7 +320,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-
   /* Header styles
   ------------------------------------ */
   .header {
