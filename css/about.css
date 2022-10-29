@@ -59,6 +59,18 @@
 
   /* 14px to 16px */
   --fs-4: clamp(0.88rem, calc(0.83rem + 0.19vw), 1rem);
+
+  /* 10px to 14px */
+  --fs-5: clamp(0.63rem, calc(0.54rem + 0.38vw), 0.88rem);
+
+  /* 30px to 65px */
+  --fs-6: clamp(1.88rem, calc(1.15rem + 3.1vw), 3.94rem);
+
+  /* 18px to 40px */
+  --fs-7: clamp(1.13rem, calc(0.45rem + 2.88vw), 2.50rem);
+
+  /* 25px to 40px */
+  --fs-8: clamp(1.31rem, calc(0.73rem + 2.48vw), 2.50rem);
 }
 
 body {
@@ -112,21 +124,29 @@ body {
   padding-block: 20px;
 }
 
-.hero__img-wrapper {
-  width: 100%;
+
+.hero__header {
   padding-inline: 12px;
+  text-align: center;
 }
 
-.hero__img {
-  display: block;
-  width: 100%;
-  max-width: 583px;
-  height: auto;
-  margin-inline: auto;
+.hero__welcome {
+  font-size: var(--fs-8);
+  margin-block-end: 0.5em;
+  color: var(--ascent-color);
 }
 
-.hero__img.desktop {
-  display: none;
+.hero__theme {
+  margin: 0;
+  font-weight: 900;
+  font-size: var(--fs-6);
+  letter-spacing: -0.05em;
+  line-height: 1;
+  background-image: url(../img/mask.jpg);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .hero__subtheme {
@@ -355,6 +375,7 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
+
   /* Header styles
   ------------------------------------ */
   .header__banner {
@@ -394,14 +415,10 @@ body {
     margin-inline: auto;
   }
 
-  .hero__img.desktop {
-    display: block;
-  }
-
-  .hero__img.mobile {
+  .hero__welcome {
     display: none;
   }
-
+  
   .hero__subtheme.desktop {
     display: unset;
   }

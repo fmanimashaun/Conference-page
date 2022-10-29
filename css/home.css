@@ -131,7 +131,7 @@
 .hero__theme {
   margin: 0;
   font-weight: 900;
-  font-size: var(--fs-6); /* 65 */
+  font-size: var(--fs-6);
   letter-spacing: 0.04em;
   line-height: 1;
   background-image: url(../img/mask.jpg);
