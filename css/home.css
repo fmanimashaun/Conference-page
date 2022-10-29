@@ -389,7 +389,7 @@
     background-image: url(../img/Hero-desktop_bg.png);
   }
 
-  /* programme styles 
+  /* programme styles
   ------------------------------------ */
   .program__cards {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
