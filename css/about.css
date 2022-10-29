@@ -357,10 +357,6 @@ body {
 @media only screen and (min-width: 768px) {
   /* Header styles
   ------------------------------------ */
-  .header {
-    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-  }
-
   .header__banner {
     padding-inline: var(--space-3);
   }

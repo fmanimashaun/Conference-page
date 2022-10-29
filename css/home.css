@@ -369,10 +369,6 @@
 @media only screen and (min-width: 768px) {
   /* Header styles
   ------------------------------------ */
-  .header {
-    filter: drop-shadow(4px 4px 4px var(--dark-color));
-  }
-
   .header__banner {
     padding-inline: var(--space-3);
   }
