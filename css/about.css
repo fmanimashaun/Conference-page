@@ -143,7 +143,6 @@ body {
   line-height: 1;
   background-image: url(../img/mask.jpg);
   background-size: cover;
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
