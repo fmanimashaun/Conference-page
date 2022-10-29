@@ -42,6 +42,7 @@
 ------------------------------------ */
 :root {
   /* custom space */
+  
   /* 40px to 198px on viewport 768px to 1440px */
   --space-3: clamp(2.5rem, calc(-8.79rem + 23.51vw), 12.38rem);
 
@@ -58,17 +59,18 @@
   --space-7: clamp(1.88rem, calc(0.88rem + 4.23vw), 4.69rem);
 
   /* custom font-size */
+
   /* 16px to 24px */
-  --fs-1: clamp(1.00rem, calc(0.82rem + 0.75vw), 1.50rem);
+  --fs-1: clamp(1.00rem, calc(0.82rem + 0.75vw), 1.5rem);
 
   /* 14px to 18px */
   --fs-2: clamp(0.88rem, calc(0.79rem + 0.38vw), 1.13rem);
 
   /* 12px to 16px */
-  --fs-3: clamp(0.75rem, calc(0.66rem + 0.38vw), 1.00rem);
+  --fs-3: clamp(0.75rem, calc(0.66rem + 0.38vw), 1rem);
 
   /* 14px to 16px */
-  --fs-4: clamp(0.88rem, calc(0.83rem + 0.19vw), 1.00rem);
+  --fs-4: clamp(0.88rem, calc(0.83rem + 0.19vw), 1rem);
 }
 
 /* hero styles
@@ -343,7 +345,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-
   /* Header styles
   ------------------------------------ */
   .header {
