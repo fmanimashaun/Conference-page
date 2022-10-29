@@ -418,7 +418,7 @@
   }
 
   .program__card:hover {
-    border: 2px solid --light-color;
+    border: 2px solid var(--light-color);
   }
 
   .program__card-title {
