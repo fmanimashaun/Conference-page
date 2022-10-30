@@ -77,7 +77,7 @@ speakers.forEach((speaker) => {
           <p class="speaker__card-desc">${speaker.desc}</p>
       </div>`;
   }
-})
+});
 
 // add event listener to the more button
 moreBtn.addEventListener('click', () => {
@@ -96,5 +96,3 @@ moreBtn.addEventListener('click', () => {
 
   moreBtn.classList.add('close');
 });
-
-

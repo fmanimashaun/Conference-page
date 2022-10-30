@@ -12,4 +12,3 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('close');
 });
-
