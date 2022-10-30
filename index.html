@@ -16,8 +16,121 @@
 <body>
 	<!-- ***********************  PAGE OVERALL CONTENT WRAPPER *********************** -->
 	<div class="container">
+		<header class="header">
+			<div class="header__banner close">
+				<ul class="header__banner-items">
+					<li><a href="#"><img class="header__banner-img" src="img/twitter.png" alt="twitter icon"></a></li>
+					<li><a href="#"><img class="header__banner-img" src="img/facebook.png" alt="facebook icon"></a></li>
+					<li>English</li>
+					<li>My Page</li>
+					<li>Logout</li>
+				</ul>
+			</div>
+			<div class="header__nav">
+				<a class="header__logo close" href="/">
+					<img class="header__logo-img" src="img/logo.png" alt="logo">
+				</a>
+				<nav class="header__navbar">
+					<ul class="header__navlinks close">
+						<li><img class="header__navbar-close" src="img/close_mobile_menu.png" alt="close icon"></li>
+						<li><a class="active" href="/">Home</a></li>
+						<li><a href="components/about.html">About</a></li>
+						<li><a href="#">Program</a></li>
+						<li><a href="#">Join</a></li>
+						<li><a href="#">Sponsor</a></li>
+						<li><a href="#">News</a></li>
+						<li class="campaign"><a href="#"><span>CC Campaign</span></a></li>
+					</ul>
+				</nav>
+				<img class="header__navbar-menu" src="img/menu.png" alt="menu icon">
+			</div>
+		</header>
+		<main class="main">
+			<section class="hero">
+				<div class="hero__wrapper">
+					<div class="hero__header">
+						<p class="hero__welcome">"Hello! Sharing World"</p>
+						<h1 class="hero__theme">CREATIVE COMMONS<br>GLOBAL SUMMIT<br>2015</h1>
+					</div>
+					<p class="hero__subtheme">A joyful celebration believing in the value of openness and sharing, creating
+						a positive change with people from over 80 countries is taking place in October, in Korea.</p>
+					<div class="hero__event">
+						<p class="hero__event-date">2015.10.15(THU) ~ 16(FRI)</p>
+						<p class="hero__event-venue">@ National Museum of Karea, Art Center Nabi and more
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="program">
+				<h2 class="program__title">Main Program</h2>
+				<div class="program__cards">
+					<div class="program__card">
+						<img class="program__card-img" src="img/program_icon_01.png" alt="Lecture icon">
+						<h3 class="program__card-title">Lecture</h3>
+						<p class="program__card-text">Listen to the speakers from various countries about the messages of sharing
+							and opening.</p>
+					</div>
+					<div class="program__card">
+						<img class="program__card-img" src="img/program_icon_02.png" alt="CC Exhibition icon">
+						<h3 class="program__card-title">CC Exhibition</h3>
+						<p class="program__card-text">Appreciate various creations applying CC license of artists, organized from
+							Art Center Nabi</p>
+					</div>
+					<div class="program__card">
+						<img class="program__card-img" src="img/program_icon_03.png" alt="Forum icon">
+						<h3 class="program__card-title">Forum</h3>
+						<p class="program__card-text">Have the time to share your thoughts and opinions with experts for each topic.
+						</p>
+					</div>
+					<div class="program__card">
+						<img class="program__card-img" src="img/program_icon_04.png" alt="Workshop icon">
+						<h3 class="program__card-title">Workshop</h3>
+						<p class="program__card-text">Try creating your own work using open source license rather than just watching
+							at it.</p>
+					</div>
+					<div class="program__card">
+						<img class="program__card-img" src="img/program_icon_05.png" alt="CC Ignite icon">
+						<h3 class="program__card-title">CC Ignite</h3>
+						<p class="program__card-text">Get opportunities to network with CC affiliates around the world, also after
+							the summit.</p>
+					</div>
+				</div>
+				<a class="program__btn mobile" href="#">Join CC Global Summit 2015</a>
+				<a class="program__btn desktop" href="#">SEE THE WHOLE PROGRAM</a>
+			</section>
+			<section class="speakers">
+				<div class="speakers__wrapper">
+					<h3 class="speakers__title">Featured Speakers</h3>
+					<div class="speaker__cards"></div>
+					<button class="speakers__btn">MORE<img class="speakers__btn-icon" src="img/arrow_down.png"
+							alt="arrow icon"></button>
+				</div>
+			</section>
+			<section class="partners">
+				<div class="partners__title">Partner</div>
+				<div class="partner__img-wrapper">
+					<img src="img/mozilla.png" alt="mozilla icon" class="partner__img">
+					<img src="img/google.png" alt="google icon" class="partner__img">
+					<img src="img/naver.png" alt="naver icon" class="partner__img">
+					<img src="img/daumkakao.png" alt="daumkakao icon" class="partner__img">
+					<img src="img/airbnb.png" alt="airbnb icon" class="partner__img">
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__credit">
+				<img src="img/cck-logo_black.png" alt="Creative commons korea" class="footer__credit-img">
+				<div class="footer__credit-text">
+					<p>2015 Creative Commons Korea. Some Rights Reserved.</p>
+					<p>달리 정하지 않은 웹사이트의 모든 내용은 크리에이티브 커먼즈 저작자표시 2.0 대한민국 라이선스에 따라 이용할 수 있습니다.
+						자세한 이용기능 내용과 허락조건은 <a class="footer__credit-link" href="http://creativecommons.org/licences/by/2.0/kr"
+							hreflang="kr">http://creativecommons.org/licences/by/2.0/kr</a> 를 보세요.</p>
+				</div>
+			</div>
+		</footer>
 	</div>
 	<script src="js/index.js"></script>
+	<script src="js/home.js"></script>
 </body>
 
 </html>

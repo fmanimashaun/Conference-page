@@ -9,13 +9,14 @@ As part of Microverse programme requirements for the completion of the **HTML/CS
 ## Project Tasks List (Working-in-progress)
 
 - [x] Setting up the initial project structure
-- [ ] mobile version skeleton
-- [ ] Desktop version
-- [ ] Mobile menu - javascript
-- [ ] Preserve data in the browser
-- [ ] Finalising the project page
+- [x] mobile version skeleton
+- [x] Desktop version
+- [x] Mobile menu - javascript
+- [x] Dynamic creation of html elements with javascript
 
-> [Live Demo Link](#)
+> [Live Demo Link](https://fmanimashaun.github.io/Conference-page/)
+
+> [Video Demo on LOOM](https://www.loom.com/share/fbebfa9e8d6b4a4c974a067554b75435)
 
 ## Screenshots
 
@@ -31,7 +32,8 @@ As part of Microverse programme requirements for the completion of the **HTML/CS
 
 <h3 align="center">Mobile View</h3>
 <p align="center">
-  <img width="375" src="screenshots/mobile_view.png">
+  <img width="375" src="screenshots/mobile_view_1.png">
+  <img width="375" src="screenshots/mobile_view_2.png">
 </P>
 
 ## Built With
@@ -68,4 +70,13 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](./LICENSE)
+
+[![CC BY-NC-SA 4.0][cc-by-nc-sa-image]][cc-by-nc-sa]
+
+[cc-by-nc-sa]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[cc-by-nc-sa-image]: https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png
+[cc-by-nc-sa-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg
