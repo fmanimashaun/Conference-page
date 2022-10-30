@@ -13,4 +13,3 @@ closeBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('close');
 });
 
-console.log(window.innerWidth);

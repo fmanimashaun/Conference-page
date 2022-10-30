@@ -1,6 +1,6 @@
 // Creating variables
 const moreBtn = document.querySelector('.speakers__btn');
-let speakerContainer = document.querySelector('.speaker__cards');
+const speakerContainer = document.querySelector('.speaker__cards');
 const screenSize = window.innerWidth;
 
 // Create speakers data array
@@ -59,7 +59,7 @@ speakers.forEach((speaker) => {
   if (screenSize < 768) {
     if (speaker.status !== 'hidden') {
       speakerContainer.innerHTML += `<div class="speaker__card">
-    <img src = ${speaker.image} alt = "speaker ${speaker.id}" class="speaker__card-img" >
+    <img src = ${speaker.image} alt = "speaker ${speaker.id}" class="speaker__card-img">
       <div class="speaker__card-details">
         <h4 class="speaker__card-name">${speaker.name}</h4>
         <p class="speaker__card-title">${speaker.title}</p>
@@ -69,7 +69,7 @@ speakers.forEach((speaker) => {
     }
   } else {
     speakerContainer.innerHTML += `<div class="speaker__card">
-    <img src = ${speaker.image} alt = "speaker ${speaker.id}" class="speaker__card-img" >
+    <img src = ${speaker.image} alt = "speaker ${speaker.id}" class="speaker__card-img">
       <div class="speaker__card-details">
         <h4 class="speaker__card-name">${speaker.name}</h4>
         <p class="speaker__card-title">${speaker.title}</p>
@@ -84,7 +84,7 @@ moreBtn.addEventListener('click', () => {
   speakers.forEach((speaker) => {
     if (speaker.status === 'hidden') {
       speakerContainer.innerHTML += `<div class="speaker__card">
-    <img src = ${speaker.image} alt = "speaker ${speaker.id}" class="speaker__card-img" >
+    <img src = ${speaker.image} alt = "speaker ${speaker.id}" class="speaker__card-img">
       <div class="speaker__card-details">
         <h4 class="speaker__card-name">${speaker.name}</h4>
         <p class="speaker__card-title">${speaker.title}</p>
