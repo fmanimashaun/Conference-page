@@ -4,7 +4,7 @@
 
 ## Overview
 
-As part of Microverse programme requirements for the completion of the **HTML/CSS & JavaScript Module**, I replicate the design of an online website for a conference based on the design [guidelines](https://github.com/microverseinc/curriculum-html-css/blob/main/capstone/html_capstone.md) proveided via [Cindy Shin in behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). In other to get a close approximate measurement of components on the website, a prototype of the site was created using [Figma](https://www.figma.com/file/V0vg37EZhAbP9nUPOeCy6p/HTML%2FCSS-%26-JavaScript-capstone-project---Conference-page?node-id=68%3A4) and Photoshop. However, further personalization was adopted to make the deliverable unique.
+As part of Microverse programme requirements for the completion of the **HTML/CSS & JavaScript Module**, I replicate the design of an online website for a conference based on the design [guidelines](https://github.com/microverseinc/curriculum-html-css/blob/main/capstone/html_capstone.md) provided via [Cindy Shin in Behance](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). To get a close approximate measurement of components on the website, a site prototype was created using [Figma](https://www.figma.com/file/V0vg37EZhAbP9nUPOeCy6p/HTML%2FCSS-%26-JavaScript-capstone-project---Conference-page?node-id=68%3A4) and Photoshop. However, further personalization was adopted to make the deliverable unique.
 
 ## Project Tasks List (Working-in-progress)
 
